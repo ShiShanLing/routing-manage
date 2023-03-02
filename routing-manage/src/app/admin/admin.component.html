@@ -1,0 +1,12 @@
+<h2>Admin</h2>
+<nav style="position: relative">
+  <a routerLink="./" routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">Dashboard</a>
+  <br>
+  <a  routerLink="./crises" [queryParams]="{id:12345}" routerLinkActive="active" ariaCurrentWhenActive="page">Manage Crises</a>
+  <br>
+<!--  routerLink="./heroes"-->
+  <a [routerLink]="['./heroes/19191', {'name':'石山岭'}]">Manage Heroes</a>
+  <br>
+</nav>
+<router-outlet></router-outlet>

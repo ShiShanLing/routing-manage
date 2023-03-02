@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Angular Router App</h1>
+  <h2>AppComponent</h2>
+  <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+  <ul >
+    <li><a routerLink="/first" >First Component</a></li>
+    <li><a routerLink="/second" >Second Component</a></li>
+    <li><a routerLink="/home" >在根路由 打开home的子页面</a></li>
+    <li> <a routerLink="/admin">Admin</a></li>
+  </ul>
+  <!-- The routed views render in the <router-outlet>-->
+    <router-outlet></router-outlet>
+</div>
+
